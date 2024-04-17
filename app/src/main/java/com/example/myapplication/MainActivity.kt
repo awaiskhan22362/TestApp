@@ -21,7 +21,8 @@ class MainActivity : AppCompatActivity() {
         itemlist.add(Product("10212023",Product.MyItem.Soda,2.5))
         itemlist.add(Product("10222023",Product.MyItem.Popcorn,8.0))
         itemlist.add(Product("10222023",Product.MyItem.Popcorn,8.0))
-        //itemlist.add(Product("10232023",Product.MyItem.Soda,2.5))
+        itemlist.add(Product("10232023",Product.MyItem.Chips,7.0))
+        itemlist.add(Product("10232023",Product.MyItem.Soda,2.5))
 
         for (i in 0 until itemlist?.size!!){
             for (j in i+1 until itemlist?.size!!){
