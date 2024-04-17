@@ -1,7 +1,7 @@
 package com.example.myapplication
 
 
-class Product(val date:String, val item : MyItem, var price:Double) {
+class Product(val date:String, var item : String, var price:Double) {
     enum class MyItem {
      Soda,
         Popcorn,
@@ -10,6 +10,16 @@ class Product(val date:String, val item : MyItem, var price:Double) {
 
     fun setAmount(amount: Double) {
         price = amount
+    }
+    fun getAmount(): Double? {
+        return price
+    }
+
+    fun setItemName(items: String) {
+        item = items
+    }
+    fun getItemName(): String? {
+        return item
     }
 
 }
